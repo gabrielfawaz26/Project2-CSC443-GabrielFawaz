@@ -102,6 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd209b90a48d2fa4b98ea239d8f0325f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Robot
+  attackRange: 2
+  attackRate: 1
+  damage: 1
 --- !u!65 &631630403726190196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -135,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b79c2dc2d8ed754479e3d694775eeab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  startingHealth: 5
+  startingHealth: 20
 --- !u!1001 &5600423223058343264
 PrefabInstance:
   m_ObjectHideFlags: 0

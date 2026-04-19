@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b79c2dc2d8ed754479e3d694775eeab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  startingHealth: 10
+  startingHealth: 30
 --- !u!1 &4718042801025095729
 GameObject:
   m_ObjectHideFlags: 0
