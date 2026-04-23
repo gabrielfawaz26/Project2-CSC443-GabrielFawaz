@@ -28,11 +28,14 @@ public class Weapon : MonoBehaviour
         impulseSource.GenerateImpulse();
         Debug.Log(impulseSource);
 
+        GAME_EVENTS.OnShoot?.Invoke();
+
     }
 
     public void RefillAmmo()
     {
         currentAmmo = weaponData.maxAmmo;
+        GAME_EVENTS.OnReload?.Invoke();
     }
 
 }

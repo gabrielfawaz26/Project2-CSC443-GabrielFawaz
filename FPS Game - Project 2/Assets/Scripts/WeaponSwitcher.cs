@@ -1,4 +1,3 @@
-
 using StarterAssets;
 using UnityEngine;
 using System.Collections.Generic;
@@ -54,6 +53,8 @@ public class WeaponSwitcher : MonoBehaviour
     currentIndex = index;
     unlockedWeapons[index].gameObject.SetActive(true);
     activeWeapon.SwitchWeapon(unlockedWeapons[index]);
-}
+
+        GAME_EVENTS.OnChangeWeapon?.Invoke();
+    }
 
 }

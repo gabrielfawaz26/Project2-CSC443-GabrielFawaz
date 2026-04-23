@@ -16,6 +16,9 @@ public class WeaponPickup : Pickup
 
                 //Unlock weapon
                 switcher.UnlockWeapon(weapon);
+
+                GAME_EVENTS.OnReload?.Invoke();
+
                 return true;
             
             }

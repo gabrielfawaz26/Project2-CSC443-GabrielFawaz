@@ -22,6 +22,8 @@ public class EnemyHealth : MonoBehaviour, IPoolable
 
         currentHealth -= damage;
 
+        GAME_EVENTS.OnHit?.Invoke();
+
         if (currentHealth <= 0)
         {
             Die();
@@ -30,6 +32,8 @@ public class EnemyHealth : MonoBehaviour, IPoolable
 
     private void Die()
     {
+        GAME_EVENTS.OnDead?.Invoke();
+
         OnDied?.Invoke(this);
     }
 

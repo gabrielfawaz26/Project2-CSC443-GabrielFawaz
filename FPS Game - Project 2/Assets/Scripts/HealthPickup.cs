@@ -10,7 +10,7 @@ public class HealthPickup : Pickup
         if (playerHealth == null) return false;
 
         if (playerHealth.CurrentHealth >= playerHealth.MaxHealth) return false;
-
+        GAME_EVENTS.OnHeal?.Invoke();
         playerHealth.Heal(healAmount);
         return true;
     }

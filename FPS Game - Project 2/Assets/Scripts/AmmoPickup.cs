@@ -10,7 +10,7 @@ public class AmmoPickup : Pickup
 
         Weapon weapon = activeWeapon.CurrentWeapon;
         if (weapon.CurrentAmmo >= weapon.Data.maxAmmo) return false;
-
+        GAME_EVENTS.OnAmmo?.Invoke();
         weapon.RefillAmmo();
         return true;
     }
