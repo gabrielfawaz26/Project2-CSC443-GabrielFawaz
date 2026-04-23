@@ -374,7 +374,33 @@
 
 # 
 
-# **11. Conclusion**
+# 
+
+# **11. Features I am most proud of**
+
+# 
+
+### Map Design
+
+### 
+
+##### The map is one of the strongest parts of the project. It is designed to support both exploration and combat, guiding the player naturally through different areas. It also helps control pacing by balancing open spaces with combat zones and placing pickups in meaningful locations. Overall, it connects all gameplay systems into one cohesive experience.
+
+### 
+
+### Sound Effects System
+
+### 
+
+##### The sound system is another key feature I am proud of. It uses an event-driven AudioManager to handle all game audio instead of playing sounds directly in gameplay scripts. This keeps the code clean and makes the system easy to expand. All major actions like shooting, switching weapons, and pickups have clear audio feedback, improving immersion and responsiveness.
+
+# 
+
+# 
+
+
+
+# **12. Conclusion**
 
 # 
 
@@ -383,4 +409,10 @@
 #### 
 
 #### The use of event-driven architecture improves modularity and keeps gameplay systems independent from audio and UI logic. Overall, the project demonstrates a strong understanding of Unity development, including gameplay programming, system design, and interactive user experience design.
+
+
+
+
+
+# (ALL ASSETS IN THE SCENE ARE EITHER FROM THE STARTER KIT, OR AI GENERATED ASSETS)
 
